@@ -1,0 +1,20 @@
+<nav class="c-nav u-color-primary">
+
+    <div class="o-wrapper o-pack o-pack--between">
+        <div class="c-nav__menu o-pack o-pack__item">
+
+            {{- $currentPage := . -}}
+            {{ range .Site.Menus.main -}}
+            <a data-scroll class="o-box o-box o-pack__item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+            {{- end }}
+
+        </div>
+
+        <div class="logo o-pack__item u-img--larger">
+            <a href="/">
+                <img src="{{ .Site.Data.header.logo }}" alt="Elad Rom">
+            </a>
+        </div>
+    </div>
+
+</nav>

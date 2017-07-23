@@ -1,0 +1,59 @@
+/* ==========================================================================
+   #ICONS
+   ========================================================================== */
+
+/**
+ * Icons are svgs or otherwise other small graphic elements.
+ * Usually fit as a square, thus should be set with image utility.
+ * Have spacings between them and other elements (forms, text etc).
+ * They differ from btns by only small degrees.
+ *
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized icons up a little nicer.
+ * 3. Make icons inherit font styles
+ *    (often necessary when styling `input`s as icons).
+ */
+
+.c-icon {
+  display: inline-block; /* [1] */
+  font: inherit; /* [3] */
+  vertical-align: middle; /* [2] */
+}
+
+
+
+
+
+/* Size variants
+   ========================================================================== */
+
+/**
+ * 1. Let's not be monsters. Generally speaking we rarely need HUGE gap in icons.
+ */
+
+@each $name, $value in $global-spacing-sizes {
+
+  .c-icon#{$name} {
+    padding: #{$value / 2}; /* [1] */
+  }
+
+}
+
+
+
+
+
+/* Ghost icons
+   ========================================================================== */
+
+/**
+ * Ghost icons have see-through backgrounds and are bordered.
+ *
+ * 1. Inherit text color using the magical 'currentColor'.
+ */
+
+.c-icon--ghost {
+  border: $global-border;
+  border-color: currentColor; /* [1] */
+  border-radius: 50%;
+}

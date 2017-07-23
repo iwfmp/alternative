@@ -1,0 +1,18 @@
+# *************************************************************************************************
+# Contact section
+# *************************************************************************************************
+title = "יצירת קשר"
+description = "מוזמנים ליצור קשר בכל שאלה או בקשה."
+
+# Form fields
+formName = "שם *"
+formEmail = "אימייל *"
+formMessage = "הודעה *"
+formButton = "שלח הודעה"
+
+# Contact Info
+contactAddress = "Minkovski St 7, Tel Aviv-Yafo, Israel"
+contactMobile = "+972-54-766-1258"
+contactEmail = "eladrome@gmail.com"
+contactFacebook = "https://www.facebook.com/EladRomTM"
+

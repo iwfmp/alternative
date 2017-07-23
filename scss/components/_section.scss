@@ -1,0 +1,26 @@
+/* ==========================================================================
+   #SECTION
+   ========================================================================== */
+
+.c-section {
+    padding-top: map-get($global-spacing-sizes, '--large');
+    padding-bottom: map-get($global-spacing-sizes, '--large');
+
+  @include mq(tablet) {
+    padding-top: map-get($global-spacing-sizes, '--huge');
+    padding-bottom: map-get($global-spacing-sizes, '--huge');
+  }
+}
+
+
+/**
+ * Section header styling.
+ */
+
+.c-section__header {
+  text-align: center;
+  margin-bottom: map-get($global-spacing-sizes, '--large');
+  width: 100%;
+
+  h2 { margin-bottom: 0; }
+}

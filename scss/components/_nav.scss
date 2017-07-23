@@ -1,0 +1,16 @@
+/* ==========================================================================
+   #NAVIGATION
+   ========================================================================== */
+
+/**
+ * 1. Fix nav to top and above the page.
+ * 2. Have the nav menu items be as small as possible.
+ */
+
+.c-nav {
+  // @util position(absolute, 0 0 null 0); /* [1] */
+  z-index: z(default); /* [1] */
+  box-shadow: $global-shadow;
+
+  .c-nav__menu { flex: 0; } /* [2] */
+}

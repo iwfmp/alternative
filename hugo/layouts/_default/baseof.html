@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}" dir="rtl">
+    <head>
+        {{ partial "head.html" . }}
+        {{ partial "favicons.html" . }}
+    </head>
+    <body class="u-color-primary">
+        {{ partial "nav.html" . }}
+
+<!--         {{ block "header" . }}
+            {{ partial "header-inner.html" . }}
+        {{ end }} -->
+
+        {{ block "main" . }}
+        <!-- The part of the page that begins to differ between templates -->
+        {{ end }}
+    </body>
+
+    {{ partial "scripts.html" . }}
+</html>
