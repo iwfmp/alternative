@@ -6,10 +6,10 @@
  * Animated check design.
  */
 
-$check-width: 20px;
-$check-height: 50px;
-$check-border: 6px;
-$check-color: $color-green-atlantis;
+$check-width: 20px !default;
+$check-height: 50px !default;
+$check-border: 6px !default;
+$check-color: $color-green-atlantis !default;
 
 
 

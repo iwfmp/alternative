@@ -3,6 +3,13 @@
    ========================================================================== */
 
 /**
+ * 1. For adjusting the footer. Bad, I know.
+ */
+
+#contact { margin-bottom: -#{$bg-skew-size}; } /* [1] */
+
+
+/**
  * Contact is a floating box over a google map.
  *
  * 1. Some general styling for the box.
@@ -15,8 +22,6 @@
   box-shadow: $global-shadow; /* [1] */
 
   position: relative; /* [2] */
-  top: 50%; /* [2] */
-  transform: translateY(-50%); /* [2] */
 }
 
 
@@ -30,23 +35,9 @@
  * 1. Toggle between hidden/visible for form and thanks message.
  *    I use opacity so nt to lose the overall dimensions and thus
  *    avoid a visual jump when the 2 containers switch.
- * 2. Position the thanks overlay according to correct location.
  */
 
 .c-contact__form {
   position: relative;
   > :not(.is-active) { opacity: 0; } /* [1] */
-}
-
-
-/**
- * This should probably be defined in a form object, but meh.
- */
-
-.c-field {
-  margin-bottom: map-get($global-spacing-sizes, null);
-  &:last-child { margin-bottom: 0; }
-
-  textarea, input { padding: map-get($global-spacing-sizes, '--small'); }
-  textarea { min-height: 100px; }
 }

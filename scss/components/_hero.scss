@@ -15,7 +15,7 @@
 
 
 /**
- * Inherit size of the parent.
+ * 1. Inherit size of the parent.
  */
 
 .c-hero__media,
@@ -30,22 +30,6 @@
  */
 
 .c-hero__media {
-  position: absolute; /* [1] */
-  top: 0; /* [1] */
-  left: 0; /* [1] */
+  @util position(absolute, 0 null null 0);  /* [1] */
+  z-index: z(under);
 }
-
-
-/**
- * 1. Locate hero body above media.
- */
-
-.c-hero__body { position: relative; }
-
-
-
-
-
-/* Size variants
-   ========================================================================== */
-.c-hero--half { height: 50vh; }

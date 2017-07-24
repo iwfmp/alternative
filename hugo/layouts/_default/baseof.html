@@ -4,16 +4,20 @@
         {{ partial "head.html" . }}
         {{ partial "favicons.html" . }}
     </head>
-    <body class="u-color-primary">
-        {{ partial "nav.html" . }}
+    <body class="u-color-primary c-page">
+        <!-- {{ partial "nav.html" . }} -->
 
-<!--         {{ block "header" . }}
+        {{ block "header" . }}
             {{ partial "header-inner.html" . }}
-        {{ end }} -->
-
-        {{ block "main" . }}
-        <!-- The part of the page that begins to differ between templates -->
         {{ end }}
+
+        <div class="c-page__stretch">
+            {{ block "main" . }}
+            <!-- The part of the page that begins to differ between templates -->
+            {{ end }}
+        </div>
+
+        {{ partial "footer.html" . }}
     </body>
 
     {{ partial "scripts.html" . }}

@@ -1,49 +1,50 @@
 {{ define "main" }}
 
-    <div class="o-wrapper c-section">
+<div class="o-wrapper c-section">
 
-        <header class="u-margin-bottom">
+    <header class="u-margin-bottom">
 
-            <div><b>{{ .Date.Format "Mon Jan 2, 2006" }}</b></div>
-            <div><b>{{ .WordCount }} מילים, כ-{{ .ReadingTime }} דקות קריאה</b></div>
+        <div><b>{{ .Date.Format "Mon Jan 2, 2006" }}</b></div>
+        <div><b>{{ .WordCount }} מילים, כ-{{ .ReadingTime }} דקות קריאה</b></div>
 
-        </header>
+    </header>
 
-        <main class="u-margin-bottom">
+    <main class="u-margin-bottom">
 
-            {{ .Content }}
+        {{ .Content }}
 
-        </main>
+    </main>
 
-        <footer class="meta">
+    <footer class="meta">
 
-            <div>
-                <nav class="u-list-reset">
-                    {{ range .Params.topics }}
-                    <a href="{{ $baseURL }}/topics/{{ . | urlize }}">{{ . }}</a>
-                    {{ end }}
-                </nav>
-
-                <nav class="u-list-reset">
-                    {{ range .Params.tags }}
-                    <a class="o-btn o-btn--ghost o-btn--tiny" href="{{ $baseURL }}/tags/{{ . | urlize }}">{{ . }}</a>
-                    {{ end }}
-                </nav>
-            </div>
-
-            <!-- <div>
-
-                {{ if .Prev }}
-                <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a>
+        <div>
+            <nav class="u-list-reset">
+                {{ range .Params.topics }}
+                <a href="/topics/{{ . | urlize }}">{{ . }}</a>
                 {{ end }}
+            </nav>
 
-                {{ if .Next }}
-                <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
+            <nav class="u-list-reset">
+                {{ range .Params.tags }}
+                <a class="o-btn o-btn--ghost o-btn--tiny" href="/tags/{{ . | urlize }}">{{ . }}</a>
                 {{ end }}
+            </nav>
+        </div>
 
-            </div> -->
+        <!-- <div>
 
-        </footer>
+            {{ if .Prev }}
+            <a class="previous" href="{{.Prev.Permalink}}"> {{.Prev.Title}}</a>
+            {{ end }}
 
-    </div>
+            {{ if .Next }}
+            <a class="next" href="{{.Next.Permalink}}"> {{.Next.Title}}</a>
+            {{ end }}
+
+        </div> -->
+
+    </footer>
+
+</div>
+
 {{ end }}

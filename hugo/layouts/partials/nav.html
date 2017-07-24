@@ -1,20 +1,22 @@
-<nav class="c-nav u-color-primary">
+<nav class="c-nav o-wrapper">
 
-    <div class="o-wrapper o-pack o-pack--between">
-        <div class="c-nav__menu o-pack o-pack__item">
+    <div class="o-pack o-pack--between">
 
-            {{- $currentPage := . -}}
-            {{ range .Site.Menus.main -}}
-            <a data-scroll class="o-box o-box o-pack__item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
-            {{- end }}
-
+        <div class="c-nav__menu">
+            <div class="o-pack">
+                {{- $currentPage := . -}}
+                {{ range .Site.Menus.main -}}
+                <a data-scroll class="c-nav-stroke o-box {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}"><b>{{ .Name }}</b></a>
+                {{- end }}
+            </div>
         </div>
 
-        <div class="logo o-pack__item u-img--larger">
+        <div class="c-nav__logo u-img--larger">
             <a href="/">
                 <img src="{{ .Site.Data.header.logo }}" alt="Elad Rom">
             </a>
         </div>
+
     </div>
 
 </nav>

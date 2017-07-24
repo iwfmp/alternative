@@ -1,3 +1,70 @@
+/* ==========================================================================
+   #Background Skew
+   ========================================================================== */
+
+$bg-skew-size: 60px;
+
+/**
+ * Container definitions for the background skew.
+ *
+ * 1. Disable any otherwise declared height.
+ * 2. Give space both to the skew bg and content.
+ */
+
 .c-bg-skew {
-  background: linear-gradient(to left bottom, transparent 49%, #B7CFDC 50%);
+  position: relative;
+  height: auto !important; /* [1] */
+  margin: $bg-skew-size 0; /* [2] */
+  padding: 40px 0; /* [2] */
+
+
+/**
+ * Actual skew definitions on psuedo elements.
+ *
+ * .1 Height should be exact to the margin declared on parent.
+ */
+
+  &::before,
+  &::after {
+    @util position(absolute, null 0 null 0);
+    content: '';
+    display: block;
+    height: $bg-skew-size; /* [1] */
+  }
+
+
+/**
+ * Specific skew definitions.
+ */
+
+  &::before { top: -#{$bg-skew-size}; }
+  &::after { bottom: -#{$bg-skew-size}; }
+
+}
+
+
+
+
+
+/* Color variants
+   ========================================================================== */
+
+@each $name, $value in $global-colors {
+
+  .c-bg-skew--#{$name} {
+    &::before { background: linear-gradient(to left bottom, transparent 49%, $value 50%); }
+    &::after { background: linear-gradient(to right top, transparent 49%, $value 50%); }
+  }
+
+}
+
+
+
+
+
+/* Misc variants
+   ========================================================================== */
+.c-bg-skew--top {
+  margin-bottom: 0;
+  &::after { display: none; }
 }

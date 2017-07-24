@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+/**
+ * Some rules basically for sticky footer in case there's not enoguh content.
+ */
+
+.c-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-page__stretch { flex: 1; }

@@ -3,12 +3,12 @@
    ========================================================================== */
 
 .c-section {
-    padding-top: map-get($global-spacing-sizes, '--large');
-    padding-bottom: map-get($global-spacing-sizes, '--large');
+    padding-top: $global-spacing-unit-large;
+    padding-bottom: $global-spacing-unit-large;
 
   @include mq(tablet) {
-    padding-top: map-get($global-spacing-sizes, '--huge');
-    padding-bottom: map-get($global-spacing-sizes, '--huge');
+    padding-top: $global-spacing-unit-huge;
+    padding-bottom: $global-spacing-unit-huge;
   }
 }
 
@@ -19,7 +19,7 @@
 
 .c-section__header {
   text-align: center;
-  margin-bottom: map-get($global-spacing-sizes, '--large');
+  margin-bottom: $global-spacing-unit-large;
   width: 100%;
 
   h2 { margin-bottom: 0; }

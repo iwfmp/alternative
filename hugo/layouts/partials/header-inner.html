@@ -1,11 +1,11 @@
-<header class="c-hero c-hero--half u-color-secondary">
+<header>
 
-    <div class="c-hero__body u-center-flex">
+    {{ partial "nav.html" . }}
+
+    <div class="c-bg-skew c-bg-skew--secondary u-color-secondary">
 
         <div class="o-block">
-            <div class="o-block__body u-color-text-white">
-                <h1 class="u-h1 u-margin-bottom--flush">{{ .Title }}</h1>
-            </div>
+            <h1 class="u-h1">{{ .Title }}</h1>
         </div>
 
     </div>
