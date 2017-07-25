@@ -1,0 +1,115 @@
+/* ==========================================================================
+   #NAV MOBILE
+   ========================================================================== */
+
+$nav-mobile-pi: 3.14 !default;
+$nav-mobile-items: 5 !default;
+$nav-mobile-open-distance: 115px !default;
+$nav-mobile-open-angle: $nav-mobile-pi - .2 !default;
+$nav-mobile-size: 7rem !default;
+
+%ball {
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms;
+}
+
+
+
+
+
+/* # Nav Mobile Toggle
+   ========================================================================== */
+
+.c-nav-mobile__toggle {
+  cursor: pointer;
+  transform: scale(1, 1);
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &:hover { transform: scale(1.1, 1.1); }
+
+
+  > span {
+    @util size(25px 3px);
+
+    background: currentColor;
+    transform-origin: center center;
+    transition: transform 200ms;
+  }
+
+
+  .hamburger-1 { transform: translate3d(0, calc(-50% - 4px), 0); }
+  .hamburger-2 { transform: translate3d(0, -50%, 0); }
+  .hamburger-3 { transform: translate3d(0, calc(-50% + 4px), 0); }
+}
+
+
+/**
+ * Open State
+ */
+
+.c-nav-mobile__input:checked + .c-nav-mobile__toggle {
+  transform: scale(.8, .8);
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+
+  .hamburger-1 { transform: rotate(45deg); }
+  .hamburger-2 { transform: scale(.1, 1); }
+  .hamburger-3 { transform: rotate(-45deg); }
+}
+
+
+
+
+
+/* # Nav Mobile Menu
+   ========================================================================== */
+
+.menu {
+  font-size: 4rem;
+  margin: -$nav-mobile-size $nav-mobile-size 0 0;
+  position: relative;
+}
+
+.c-nav-mobile__item {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  span { display: none; }
+
+  &:hover {
+    background: $color-white;
+    color: yellow;
+  }
+
+  @for $i from 1 through $nav-mobile-items {
+    &:nth-child(#{$i+2}) { transition-duration: 180ms; }
+  }
+}
+
+
+
+
+
+/* # Nav Mobile Open
+   ========================================================================== */
+
+.c-nav-mobile__input { display: none; }
+
+.c-nav-mobile__input:checked ~ .c-nav-mobile__item {
+  transition-timing-function: cubic-bezier(.935, 0, .34, 1.33);
+
+  @for $i from 1 through $nav-mobile-items {
+    $nav-mobile-open-angle: (($nav-mobile-pi - $nav-mobile-open-angle) / 2) + (($nav-mobile-open-angle/($nav-mobile-items - 1)) * ($i - 1));
+
+    &:nth-child(#{$i + 2}) {
+      transform: translate3d(cos($nav-mobile-open-angle) * $nav-mobile-open-distance, sin($nav-mobile-open-angle) * $nav-mobile-open-distance, 0);
+      transition-duration: 80ms + (80ms * $i);
+    }
+  }
+}

@@ -20,3 +20,33 @@
     </div>
 
 </nav>
+
+<nav class="c-nav--mobile o-wrapper">
+
+    <div class="o-pack o-pack--center">
+
+        <div class="c-nav__logo u-img--huger">
+            <a href="/">
+                <img src="{{ .Site.Data.header.logo }}" alt="Elad Rom">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="o-pack o-pack--middle">
+
+        <input type="checkbox" class="c-nav-mobile__input" name="nav-open" id="nav-open" />
+        <label class="c-nav-mobile__toggle u-img--large u-img--round u-color-secondary" for="nav-open">
+            <span class="hamburger-1"></span>
+            <span class="hamburger-2"></span>
+            <span class="hamburger-3"></span>
+        </label>
+
+        {{- $currentPage := . -}}
+        {{ range .Site.Menus.main -}}
+        <a data-scroll class="c-nav-mobile__item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}"><b>{{ .Name }}</b></a>
+        {{- end }}
+
+    </div>
+
+</nav>
