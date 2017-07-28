@@ -4,7 +4,7 @@
 
 .c-nav--desktop {
   display: none;
-  @include mq(tablet) { display: blockp; }
+  @include mq(tablet) { display: block; }
 }
 
 
