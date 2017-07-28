@@ -1,4 +1,4 @@
-<nav class="c-nav o-wrapper">
+<!-- <nav class="c-nav o-wrapper">
 
     <div class="o-pack o-pack--between">
 
@@ -19,33 +19,34 @@
 
     </div>
 
-</nav>
+</nav> -->
 
-<nav class="c-nav--mobile o-wrapper">
+<nav class="c-nav--mobile">
 
-    <div class="o-pack o-pack--center">
+    <div class="o-wrapper o-pack o-pack--between">
 
-        <div class="c-nav__logo u-img--huger">
+        <div class="c-nav__logo u-img--huge">
             <a href="/">
                 <img src="{{ .Site.Data.header.logo }}" alt="Elad Rom">
             </a>
         </div>
 
-    </div>
+        <div>
 
-    <div class="o-pack o-pack--middle">
+            <a href="#" data-nav-toggle="#nav-mobile" class="c-hamburger u-img--large u-img--round u-color-secondary">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </a>
 
-        <input type="checkbox" class="c-nav-mobile__input" name="nav-open" id="nav-open" />
-        <label class="c-nav-mobile__toggle u-img--large u-img--round u-color-secondary" for="nav-open">
-            <span class="hamburger-1"></span>
-            <span class="hamburger-2"></span>
-            <span class="hamburger-3"></span>
-        </label>
+            <div class="c-nav__menu o-box" id="nav-mobile">
+                {{- $currentPage := . -}}
+                {{ range .Site.Menus.main -}}
+                <a data-scroll class="c-nav__item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}"><b>{{ .Name }}</b></a>
+                {{- end }}
+            </div>
 
-        {{- $currentPage := . -}}
-        {{ range .Site.Menus.main -}}
-        <a data-scroll class="c-nav-mobile__item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}"><b>{{ .Name }}</b></a>
-        {{- end }}
+        </div>
 
     </div>
 

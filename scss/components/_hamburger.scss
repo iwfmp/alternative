@@ -1,0 +1,93 @@
+/* ==========================================================================
+   #HAMBURGER TOGGLE
+   ========================================================================== */
+
+$hamburger-line-space: 8px !default;
+
+
+/**
+ * 1. Take as little space as possible. Other styling should be applied w/ utils.
+ * 2. Always make the hamburger look clickable.
+ */
+
+.c-hamburger {
+  position: relative;
+  display: inline-block; /* [1] */
+  cursor: pointer; /* [2] */
+}
+
+
+
+
+
+/* # Hamburger Lines
+   ========================================================================== */
+
+/**
+ * 1. Align the items to the perfect center.
+ * 2. Create some space between lines.
+ * 3. Give generic width to the lines.
+ * 4. Line color should be derived from the text color (color utils)
+ */
+
+.c-hamburger > span {
+  position: absolute; /* [1] */
+  left: 50%; /* [1] */
+  transform: translate(-50%, -50%); /* [1] */
+  display: block;
+  width: 50%; /* [3] */
+  height: 3px;
+  background-color: currentColor; /* [4] */
+  transition: all 0.3s;
+
+  &.top { top: calc(50% - #{$hamburger-line-space}); } /* [2] */
+  &.middle { top: 50%; } /* [1] */
+  &.bottom { top: calc(50% + #{$hamburger-line-space}); } /* [2] */
+}
+
+
+/**
+ * Active state
+ *
+ * 1. Keep the vertical/horizontal align and rotate.
+ * 2. Hide the middle line since it's not necessary for visual.
+ */
+
+.c-hamburger.is-active {
+  .top,
+  .bottom { top: 50%; }
+  .top { transform: translate(-50%, -50%) rotate(45deg); } /* [1] */
+  .bottom { transform: translate(-50%, -50%) rotate(-45deg); } /* [1] */
+  .middle { opacity: 0; } /* [2] */
+}
+
+
+
+
+
+/* # Hamburger Animation
+   ========================================================================== */
+
+.c-hamburger {
+  transform: scale(1, 1);
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(.175, .885, .32, 1.275);
+}
+
+
+/**
+ * Hover State
+ */
+
+.c-hamburger:hover { transform: scale(1.1, 1.1); }
+
+
+/**
+ * Active State
+ */
+
+.c-hamburger.is-active {
+  transform: scale(.8, .8);
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
