@@ -14,15 +14,12 @@
   @extend .u-h4;
   display: block;
   outline: 0;
+  text-align: right;
+
+  // width: 100%;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: $global-spacing-unit-small;
 }
-
-
-/**
- * Expanded/Collapsed prefix.
- */
-
-.c-accordion__header[aria-expanded="true"]:before { content: "- "; }
-.c-accordion__header[aria-expanded="false"]:before { content: "+ "; }
 
 
 
@@ -35,7 +32,6 @@
  display: block;
  overflow: hidden;
  transition: visibility 0s ease, max-height 1s ease, opacity 1s ease;
- margin-right: 26px; // Align to heading
 
  max-height: 100em; // magic number for max-height = enough height
  opacity: 1;

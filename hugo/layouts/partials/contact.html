@@ -13,33 +13,8 @@
             </div>
 
 
-            <div class="c-contact__info u-padding-top u-padding-bottom">
-                <ul class="o-pack u-list-reset">
-                    <li>
-                        <a target="_blank" href="http://maps.google.com/?q={{ .Site.Data.contact.contactAddress }}">
-                            <svg class="c-icon c-icon--ghost u-img--large"><use xlink:href="svg/svg-symbols.svg#location"/></svg>
-                            <span class="u-hide-visually">{{ .Site.Data.contact.contactAddress }}</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="tel:{{ .Site.Data.contact.contactMobile }}">
-                            <svg class="c-icon c-icon--ghost u-img--large"><use xlink:href="svg/svg-symbols.svg#phone"/></svg>
-                            <span class="u-hide-visually">{{ .Site.Data.contact.contactMobile }}</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:{{ .Site.Data.contact.contactEmail }}">
-                            <svg class="c-icon c-icon--ghost u-img--large"><use xlink:href="svg/svg-symbols.svg#envelope"/></svg>
-                            <span class="u-hide-visually">{{ .Site.Data.contact.contactEmail }}</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="{{ .Site.Data.contact.contactFacebook }}">
-                            <svg class="c-icon c-icon--ghost u-img--large"><use xlink:href="svg/svg-symbols.svg#facebook"/></svg>
-                            <span class="u-hide-visually">{{ .Site.Data.contact.contactFacebook }}</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="c-contact__info u-padding-bottom">
+                {{ partial "social.html" . }}
             </div>
 
             <div class="c-contact__form">

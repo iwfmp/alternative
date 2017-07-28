@@ -22,6 +22,10 @@
   box-shadow: $global-shadow; /* [1] */
 
   position: relative; /* [2] */
+
+  @include mq(mobile, tablet) {
+    .o-headline__subtitle { display: none; }
+  }
 }
 
 

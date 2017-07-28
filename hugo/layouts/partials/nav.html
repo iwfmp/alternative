@@ -1,4 +1,4 @@
-<!-- <nav class="c-nav o-wrapper">
+<nav class="c-nav--desktop o-wrapper">
 
     <div class="o-pack o-pack--between">
 
@@ -6,12 +6,12 @@
             <div class="o-pack">
                 {{- $currentPage := . -}}
                 {{ range .Site.Menus.main -}}
-                <a data-scroll class="c-nav-stroke o-box {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}"><b>{{ .Name }}</b></a>
+                <a data-scroll class="c-nav-stroke o-box u-h5 {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}"><b>{{ .Name }}</b></a>
                 {{- end }}
             </div>
         </div>
 
-        <div class="c-nav__logo u-img--larger">
+        <div class="c-nav__logo u-img--huge">
             <a href="/">
                 <img src="{{ .Site.Data.header.logo }}" alt="Elad Rom">
             </a>
@@ -19,17 +19,11 @@
 
     </div>
 
-</nav> -->
+</nav>
 
 <nav class="c-nav--mobile">
 
     <div class="o-wrapper o-pack o-pack--between">
-
-        <div class="c-nav__logo u-img--huge">
-            <a href="/">
-                <img src="{{ .Site.Data.header.logo }}" alt="Elad Rom">
-            </a>
-        </div>
 
         <div>
 
@@ -39,15 +33,27 @@
                 <span class="bottom"></span>
             </a>
 
-            <div class="c-nav__menu o-box" id="nav-mobile">
+            <div class="c-nav--mobile__menu o-box u-color-dark" id="nav-mobile">
                 {{- $currentPage := . -}}
                 {{ range .Site.Menus.main -}}
-                <a data-scroll class="c-nav__item {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}"><b>{{ .Name }}</b></a>
+                <a data-scroll class="c-nav__item o-box u-h4 {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}"><b>{{ .Name }}</b></a>
                 {{- end }}
+
+                <div class="c-nav__social u-1/1">
+                    {{ partial "social.html" . }}
+                </div>
+
             </div>
 
         </div>
 
+        <div class="c-nav__logo u-img--huge">
+            <a href="/">
+                <img src="{{ .Site.Data.header.logo }}" alt="Elad Rom">
+            </a>
+        </div>
+
     </div>
+
 
 </nav>
