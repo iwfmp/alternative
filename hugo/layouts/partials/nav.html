@@ -1,39 +1,16 @@
-<nav class="c-nav--desktop o-wrapper u-color-primary">
-
-    <div class="o-pack o-pack--between">
-
-        <div class="c-nav__menu">
-            <div class="o-pack">
-                {{- $currentPage := . -}}
-                {{ range .Site.Menus.main -}}
-                <a data-scroll class="c-nav-stroke o-box u-h5 {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}"><b>{{ .Name }}</b></a>
-                {{- end }}
-            </div>
-        </div>
-
-        <div class="c-nav__logo u-img--huge">
-            <a href="/">
-                <img src="{{ .Site.Data.header.logo }}" alt="Elad Rom">
-            </a>
-        </div>
-
-    </div>
-
-</nav>
-
-<nav class="c-nav--mobile">
+<nav class="c-nav">
 
     <div class="o-wrapper o-pack o-pack--between">
 
         <div>
 
-            <a href="#" data-nav-toggle="#nav-mobile" class="c-hamburger u-img--large u-img--round u-color-secondary">
+            <a data-nav-toggle="#nav-mobile" class="c-hamburger u-img--large u-img--round u-color-secondary">
                 <span class="top"></span>
                 <span class="middle"></span>
                 <span class="bottom"></span>
             </a>
 
-            <div class="c-nav--mobile__menu o-box u-color-dark" id="nav-mobile">
+            <div class="c-nav__menu o-box u-color-dark" id="nav-mobile">
                 {{- $currentPage := . -}}
                 {{ range .Site.Menus.main -}}
                 <a data-scroll class="c-nav__item o-box u-h4 {{ if $currentPage.IsMenuCurrent "main" . }}is-active{{ end }}" href="{{ .URL | absLangURL }}"><b>{{ .Name }}</b></a>
@@ -49,7 +26,8 @@
 
         <div class="c-nav__logo u-img--huge">
             <a href="/">
-                <img src="{{ .Site.Data.header.logo }}" alt="Elad Rom">
+                <!-- <img src="{{ .Site.Data.header.logo }}" alt="Elad Rom"> -->
+                <!-- <svg class="u-img u-img--huger u-color-secondary"><use xlink:href="../svg/svg-symbols.svg#logo"/></svg> -->
             </a>
         </div>
 

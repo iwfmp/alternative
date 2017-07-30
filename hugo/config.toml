@@ -20,18 +20,17 @@ languageName = "עברית"
     googleMaps = "AIzaSyDMiwqXrlELchoMbRtOXfaZ8u77BqFP_eo"
 
 [[menu.main]]
+    name = "בית"
+    identifier = "home"
+    weight = -120
+    url = "/"
+[[menu.main]]
     name = "בלוג"
-    pre = "<i class='fa fa-briefcase'></i>"
-    weight = -110
     identifier = "blog"
+    weight = -110
     url = "/post/"
 [[menu.main]]
     name = "שאלות נפוצות"
-    pre = "<i class='fa fa-zap'></i>"
+    identifier = "faq"
     weight = -100
     url = "/faq/"
-[[menu.main]]
-    name = "יצירת קשר"
-    pre = "<i class='fa fa-mail'></i>"
-    weight = -90
-    url = "/#contact"
