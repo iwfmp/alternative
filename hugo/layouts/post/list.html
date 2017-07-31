@@ -1,3 +1,4 @@
+
 {{ define "main" }}
 
 <div class="c-blog o-wrapper c-section u-rhythm">
@@ -5,17 +6,12 @@
     {{ range .Data.Pages }}
     <article class="o-pack o-pack--wrap o-pack--top">
 
-        <figure class="o-pack__item u-margin">
-            <img class="u-img u-img--huger" src="/images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }}" alt="">
+        <figure class="c-blog__thumb o-pack__item o-ratio">
+            <img class="o-ratio__content" src="/images/{{ with .Params.image }}{{ . }}{{ else }}default.jpg{{ end }}" alt="">
         </figure>
 
         <div class="o-pack__item--stretch">
-            <h2>
-                <a class="u-h3" href="{{ .Permalink }}">{{ .Title }}</a>
-                <div>
-                    <time class="u-color-text-secondary">{{ with .Site.Params.DateForm }}{{ $.Date.Format . }}{{ else }}{{ $.Date.Format "Mon, Jan 2, 2006" }}{{ end }}</time>
-                </div>
-            </h2>
+            <h2 class="u-margin-bottom--flush"><a class="u-h3" href="{{ .Permalink }}">{{ .Title }}</a></h2>
             <p>{{ .Summary }}</p>
         </div>
 

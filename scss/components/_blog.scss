@@ -1,3 +1,16 @@
 .c-blog {
-  .o-pack__item--stretch { min-width: 280px; }
+  .c-blog__thumb {
+    width: 280px;
+    height: 140px;
+    margin: 0 -12px 12px;
+
+    @include mq(tablet) { margin: 12px 0 0 24px; }
+  }
+
+  article {
+    padding-bottom: 24px;
+    border-bottom: 1px solid $color-gray-hit;
+  }
 }
+
+.c-single { max-width: 780px; }

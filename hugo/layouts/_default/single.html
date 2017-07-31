@@ -1,11 +1,19 @@
 {{ define "main" }}
 
-<div class="o-wrapper c-section">
+<div class="o-wrapper c-section c-single">
 
-    <header class="u-margin-bottom">
+    <header class="u-margin-bottom o-pack o-pack--between o-pack--wrap u-rhythm--small">
 
-        <div><b>{{ .Date.Format "Mon Jan 2, 2006" }}</b></div>
-        <div><b>{{ .WordCount }} מילים, כ-{{ .ReadingTime }} דקות קריאה</b></div>
+        <div>
+            <svg class="u-img u-img"><use xlink:href="/svg/svg-symbols.svg#calendar"/></svg>
+            <time class="u-padding-right--tiny" datetime="{{ .Date.Format "Mon Jan 2, 2006" | safeHTML }}">
+                <b class="day">{{ .Date.Day }} ב{{ index $.Site.Data.months (printf "%d" .Date.Month) }}, {{ .Date.Year }}</b>
+            </time>
+        </div>
+        <div>
+            <svg class="u-img u-color-dark"><use xlink:href="/svg/svg-symbols.svg#eye"/></svg>
+            <b class="u-padding-right--tiny">{{ .WordCount }} מילים, כ-{{ .ReadingTime }} דקות קריאה</b>
+        </div>
 
     </header>
 
