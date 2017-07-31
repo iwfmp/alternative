@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>שפה on אלעד רום | מטפל אלטרנטיבי</title>
+        <link>http://localhost:3000/categories/%D7%A9%D7%A4%D7%94/</link>
+        <description>Recent content in שפה on אלעד רום | מטפל אלטרנטיבי</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>he-il</language>
+        <copyright>פורסם תחת רשיון &#39;למי אכפת?&#39; © 2017</copyright>
+        <lastBuildDate>Tue, 25 Jul 2017 12:54:08 +0300</lastBuildDate>
+
+        <atom:link href="http://localhost:3000/categories/%D7%A9%D7%A4%D7%94/index.xml" rel="self" type="application/rss+xml" />
+
+        <item>
+            <title>סמנטיקה כללית</title>
+            <link>http://localhost:3000/post/general-semantics/</link>
+            <pubDate>Tue, 25 Jul 2017 12:54:08 +0300</pubDate>
+
+            <guid>http://localhost:3000/post/general-semantics/</guid>
+            <description>נושא שגיליתי לאחרונה - סמנטיקה כללית - לכד את תשומת ליבי. אבי השיטה, אלפרד קוז&amp;rsquo;יבסקי - פילוסוף ומדען אמריקאי-פולני - פרסם את רעיונותיו בספר &amp;ldquo;מדע ושפיות-דעת&amp;rdquo;. קוז&amp;rsquo;יבסקי טוען שבני אדם לא יכולים לחוות את
+                העולם באופן ישיר, אלא רק דרך הפשטות (אבסטרקטציות) שנגזרות מהמגבלות המולדות של תפישה ושפה. לכן לא ניתן לדבר על הדבר עצמו, אלא רק לתאר את החוויה שלנו אותו, כפי שהטביע בביטוי &amp;ldquo;המפה היא לא הטריטוריה&amp;rdquo;. היישום של השיטה, בין
+                השאר, מדגיש המנעות מהצהרות זהות של &amp;ldquo;X הוא Y&amp;rdquo;, שמרמזות על ודאות, שלמות ותמידיות ויכולות למנוע מאיתנו להבין שהכל משתנה.</description>
+        </item>
+
+        <item>
+            <title>מילים, מילים</title>
+            <link>http://localhost:3000/post/word-definition/</link>
+            <pubDate>Wed, 05 Jul 2017 21:34:08 +0300</pubDate>
+
+            <guid>http://localhost:3000/post/word-definition/</guid>
+            <description>מילים הן התווית שמצביעה על המושג. המושג הוא מה שאנחנו מנסים לתאר. לפעמים זה משהו מוחשי, חומרי. לפעמים זה משהו מושפט, רעיון, רגש - משהו שלא ניתן בהכרח לתפוש באמצעות החושים. יש דברים שגם לא ניתן לדבר עליהם. כמו שכבר הוסבר בסמנטיקה הכללית, החוויה
+                היא לא משהו שניתן לדבר עליו אלא רק על התפישה שלנו אותו</description>
+        </item>
+
+    </channel>
+</rss>

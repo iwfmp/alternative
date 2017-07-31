@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>שאלות נפוצות on אלעד רום | מטפל אלטרנטיבי</title>
+        <link>http://localhost:3000/faq/</link>
+        <description>Recent content in שאלות נפוצות on אלעד רום | מטפל אלטרנטיבי</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>he-il</language>
+        <copyright>פורסם תחת רשיון &#39;למי אכפת?&#39; © 2017</copyright>
+        <lastBuildDate>Thu, 23 Mar 2017 00:00:00 +0000</lastBuildDate>
+
+        <atom:link href="http://localhost:3000/faq/index.xml" rel="self" type="application/rss+xml" />
+
+        <item>
+            <title>מה זה טיפול ומה תפקידך בו?</title>
+            <link>http://localhost:3000/faq/what-is-treatment/</link>
+            <pubDate>Wed, 02 Aug 2017 12:54:08 +0300</pubDate>
+
+            <guid>http://localhost:3000/faq/what-is-treatment/</guid>
+            <description>אני רואה טיפול כמיומנות שבאמצעותה אני עוזר לבנאדם לעזור לעצמו. כהלך רוח, סט כלים ויכולת אבחנה והבחנה. כאמצעי תקשורת שמאפשר לי להראות לאחר איך לרפא את עצמו. בין אם זה באמצעות מגע, כדי ללמד את הגוף דרגות עומק של רפיון. בין אם זה באמצעות מילים,
+                כדי להראות איך השפה משפיעה על התפישה. בין אם זה באמצעות צמחים, כדי להעיר יכולות טבעיות שכבר שכחנו שקיימות. בין אם זה באמצעות צלילים, כי ברמה המטא-פיזית כולנו רטט אחד גדול.</description>
+        </item>
+
+        <item>
+            <title>האם אני יכול לבחור את סוג הטיפול שאקבל מראש?</title>
+            <link>http://localhost:3000/faq/can-i-choose-treatment/</link>
+            <pubDate>Sun, 02 Jul 2017 12:54:08 +0300</pubDate>
+
+            <guid>http://localhost:3000/faq/can-i-choose-treatment/</guid>
+            <description>מטפל מוצלח, כפי שלמדתי להבין, הוא אחד שיש לו ארגז כלים גדול. אין כלי אחד שמתאים להכל וכולם ותמיד, ול-2 אנשים עם בעיה &amp;lsquo;זהה&amp;rsquo; עשויים להתאים כלים שונים. במילים אחרות - אני מתאים את הכלי למטופל ולא להפך. עם זאת, יש כלים שאני
+                נוטה להשתמש בהם יותר מנטייה טבעית ועומק הכרות, ואני כן משתדל להתחשב בהעדפות ובקשות, במיוחד עבור כלים ש&amp;rsquo;לא&amp;rsquo;.</description>
+        </item>
+
+        <item>
+            <title>האם יש לך תעודות הסמכה?</title>
+            <link>http://localhost:3000/faq/are-you-certified/</link>
+            <pubDate>Sun, 02 Jul 2017 12:54:08 +0300</pubDate>
+
+            <guid>http://localhost:3000/faq/are-you-certified/</guid>
+            <description>לחלק מהדברים כן, לאחרים לא. יש נושאים שאין להם הסמכה פורמאלית, לאחרים אבסורד לחשוב על זה. אין לי התנגדות עקרונית אליהן ובאותה נשימה לא אצא מגדרי להשיג אותן. תעודות אומנם יכולות להצביע לפחות על הבנה בסיסית (או נוכחות בשיעורים), ובכל מקרה דעתי
+                שעומק והבנה אמיתיים לא נמדדים בתעודות. הם נמדדים בתשוקה, סקרנות, השקעה, סבלנות, נסיון ומספיק אומץ וחוצפה להסמיך את עצמך. לרוב המורים שאצלהם למדתי הייתה נטייה דומה.</description>
+        </item>
+
+    </channel>
+</rss>
