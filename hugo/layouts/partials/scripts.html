@@ -3,7 +3,7 @@
 
 {{ template "_internal/google_analytics.html" . }}
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ .Params.googleMaps }}&callback=initializeMap" type="text/javascript"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ .Site.Params.googleMaps }}&callback=initializeMap" type="text/javascript"></script>
 
 <script>
     var scroll = new SmoothScroll('a[href*="#"]');
