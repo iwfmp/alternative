@@ -4,9 +4,13 @@
 
 /**
  * 1. For adjusting the footer. Bad, I know.
+ * 2. Min height for proper contact form display in mobile.
  */
 
-#contact { margin-bottom: -#{$bg-skew-size}; } /* [1] */
+#contact {
+  margin-bottom: -#{$bg-skew-size};  /* [1] */
+  min-height: 600px;
+}
 
 
 /**
