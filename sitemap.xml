@@ -2,70 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
     <url>
-        <loc>http://localhost:3000/faq/what-is-treatment/</loc>
+        <loc>http://alternative.eladrom.com/faq/what-is-treatment/</loc>
         <lastmod>2017-08-02T12:54:08+03:00</lastmod>
     </url>
 
     <url>
-        <loc>http://localhost:3000/post/general-semantics/</loc>
+        <loc>http://alternative.eladrom.com/post/general-semantics/</loc>
         <lastmod>2017-07-25T12:54:08+03:00</lastmod>
     </url>
 
     <url>
-        <loc>http://localhost:3000/post/word-definition/</loc>
+        <loc>http://alternative.eladrom.com/post/word-definition/</loc>
         <lastmod>2017-07-05T21:34:08+03:00</lastmod>
     </url>
 
     <url>
-        <loc>http://localhost:3000/faq/can-i-choose-treatment/</loc>
+        <loc>http://alternative.eladrom.com/faq/can-i-choose-treatment/</loc>
         <lastmod>2017-07-02T12:54:08+03:00</lastmod>
     </url>
 
     <url>
-        <loc>http://localhost:3000/faq/are-you-certified/</loc>
+        <loc>http://alternative.eladrom.com/faq/are-you-certified/</loc>
         <lastmod>2017-07-02T12:54:08+03:00</lastmod>
     </url>
 
     <url>
-        <loc>http://localhost:3000/post/</loc>
+        <loc>http://alternative.eladrom.com/post/</loc>
         <lastmod>2017-03-23T00:00:00+00:00</lastmod>
     </url>
 
     <url>
-        <loc>http://localhost:3000/faq/</loc>
+        <loc>http://alternative.eladrom.com/faq/</loc>
         <lastmod>2017-03-23T00:00:00+00:00</lastmod>
     </url>
 
     <url>
-        <loc>http://localhost:3000/categories/</loc>
+        <loc>http://alternative.eladrom.com/categories/</loc>
         <priority>0</priority>
     </url>
 
     <url>
-        <loc>http://localhost:3000/tags/</loc>
+        <loc>http://alternative.eladrom.com/tags/</loc>
         <priority>0</priority>
     </url>
 
     <url>
-        <loc>http://localhost:3000/</loc>
+        <loc>http://alternative.eladrom.com/</loc>
         <lastmod>2017-08-02T12:54:08+03:00</lastmod>
         <priority>0</priority>
     </url>
 
     <url>
-        <loc>http://localhost:3000/tags/%D7%A1%D7%9E%D7%A0%D7%98%D7%99%D7%A7%D7%94/</loc>
+        <loc>http://alternative.eladrom.com/tags/%D7%A1%D7%9E%D7%A0%D7%98%D7%99%D7%A7%D7%94/</loc>
         <lastmod>2017-07-25T12:54:08+03:00</lastmod>
         <priority>0</priority>
     </url>
 
     <url>
-        <loc>http://localhost:3000/categories/%D7%A9%D7%A4%D7%94/</loc>
+        <loc>http://alternative.eladrom.com/categories/%D7%A9%D7%A4%D7%94/</loc>
         <lastmod>2017-07-25T12:54:08+03:00</lastmod>
         <priority>0</priority>
     </url>
 
     <url>
-        <loc>http://localhost:3000/tags/%D7%A9%D7%A4%D7%94/</loc>
+        <loc>http://alternative.eladrom.com/tags/%D7%A9%D7%A4%D7%94/</loc>
         <lastmod>2017-07-25T12:54:08+03:00</lastmod>
         <priority>0</priority>
     </url>
