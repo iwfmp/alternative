@@ -28,13 +28,15 @@
         <div>
             <nav class="u-list-reset">
                 {{ range .Params.topics }}
-                <a href="/topics/{{ . | urlize }}">{{ . }}</a>
+                <span>{{ . }}</span>
+                <!-- <a href="/topics/{{ . | urlize }}">{{ . }}</a> -->
                 {{ end }}
             </nav>
 
             <nav class="u-list-reset">
                 {{ range .Params.tags }}
-                <a class="o-btn o-btn--ghost o-btn--tiny" href="/tags/{{ . | urlize }}">{{ . }}</a>
+                <span class="o-btn o-btn--ghost o-btn--tiny">{{ . }}</span>
+                <!-- <a class="o-btn o-btn--ghost o-btn--tiny" href="/tags/{{ . | urlize }}">{{ . }}</a> -->
                 {{ end }}
             </nav>
         </div>
